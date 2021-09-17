@@ -1,0 +1,52 @@
+.certificate {
+  display: block;
+  &__item {
+    font-family: "RobotoSlab";
+    font-size: 14px;
+    color: #4d4949;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-bottom: 10px;
+    background-color: rgb(241, 238, 229);
+    border-radius: 8px;
+    border: 1px solid rgb(230, 224, 224);
+  }
+
+  &__description {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    display: block;
+  }
+
+  &__dates {
+    display: block;
+  }
+
+  &__icon {
+    display: block;
+    width: 120px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.education {
+  &__title {
+  }
+
+  &__body {
+  }
+
+  &__certificate {
+    margin-top: 20px;
+  }
+}

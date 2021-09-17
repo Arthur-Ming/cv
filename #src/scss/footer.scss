@@ -1,0 +1,24 @@
+.footer {
+   padding: 30px 0px 30px;
+   border-top: 1px solid #a19a9a;
+
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__logo {
+      display: block;
+      width: 100px;
+      img {
+         width: 100%;
+      }
+   }
+   &__year {
+      font-size: 18px;
+      line-height: 24px;
+   }
+}
+
+.rss-logo {
+}

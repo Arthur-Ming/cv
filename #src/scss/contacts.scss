@@ -1,0 +1,13 @@
+.contacts {
+  &__link {
+    display: inline-block;
+  }
+  &__icon {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    &_header {
+      color: #4d4949;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.projects {
+  &__title {
+  }
+
+  &__body {
+  }
+
+  &__items {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: block;
+    // border-radius: 5px;
+    margin-bottom: 20px;
+    //padding-top: 150px;
+    // height: 200px;
+    // max-width: 40%;
+    flex: 0 0 30%;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+
+    figure {
+      p {
+        border-radius: 8px;
+        border: 1px solid rgb(230, 224, 224);
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    figcaption {
+      padding: 0px 3px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
