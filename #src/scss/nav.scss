@@ -12,16 +12,21 @@
       width: 30px;
       height: 30px;
     }
+    @media (max-width: $md3+px) {
+      display: none;
+    }
   }
   li {
     margin-bottom: 20px;
     @media (max-width: $md2+px) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     a {
       display: flex;
       align-items: center;
-
+      @media (max-width: $md3+px) {
+        justify-content: center;
+      }
       span {
         margin-left: 20px;
         color: rgb(230, 229, 221);
@@ -31,6 +36,10 @@
         transition: color 0.2s ease 0s;
         @media (max-width: $md2+px) {
           display: none;
+        }
+        @media (max-width: $md3+px) {
+          margin-left: 0;
+          display: block;
         }
       }
     }

@@ -1,9 +1,10 @@
 .sidebar {
   //	background-color: #c9d0e6;
-  //background-color: #4263eb;
+  background-color: #4263eb;
   //background-color: #fff;
   //background-color: #198ebd;
-  background: url("../img/sidebar/02.jpg") 0 0 / cover no-repeat;
+  //background: url("../img/sidebar/02.jpg") 0 0 / cover no-repeat;
+  //background: red;
 
   position: fixed;
   border-right: 1px solid black;
@@ -12,11 +13,24 @@
   height: 100%;
   top: 0;
   left: 0;
-
+  // left: -100%;
   overflow: auto;
   padding: 0px;
+  transition: left 0.3s ease 0s;
+  z-index: 90;
+
   @media (max-width: $md2+px) {
     width: 80px;
+  }
+  @media (max-width: $md3+px) {
+    opacity: 0.98;
+    border-right: none;
+    left: -100%;
+    top: 0;
+    width: 100%;
+  }
+  &._active {
+    left: 0%;
   }
 
   &__avatar {
@@ -29,6 +43,9 @@
       margin-top: 20px;
       margin-bottom: 20px;
     }
+    @media (max-width: $md3+px) {
+      display: none;
+    }
   }
   &__signature {
     margin: 0px auto;
@@ -38,7 +55,13 @@
     }
   }
   &__nav {
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0px 20px 0px;
+    @media (max-width: $md3+px) {
+      margin-top: 100px;
+    }
+    @media (max-width: $md4+px) {
+      margin-top: 80px;
+    }
   }
   &__contacts {
     display: flex;
@@ -52,6 +75,7 @@
       margin-top: 40px;
       display: none;
     }
+
     li {
       @media (max-width: $md2+px) {
         margin-bottom: 20px;

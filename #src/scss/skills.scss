@@ -10,6 +10,9 @@
       justify-content: space-between;
       align-items: center;
       width: 80%;
+      @media (max-width: $md4+px) {
+         width: 95%;
+      }
    }
 
    &__skill {

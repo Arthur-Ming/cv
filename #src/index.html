@@ -7,13 +7,13 @@
 <body>
 	<div class="wrapper">
 		@@include('_header.html',{})
-		<aside class="sidebar">
+		<aside class="sidebar menu__body">
 			<div class='avatar sidebar__avatar'>
 				<img class='avatar__image' src="img/avatar/01.jpg" alt="">
 			</div>
 			<div class="signature sidebar__signature">
 				<h2>Artur Mingazhov</h2>
-				<h3>Web developer</h3>
+				<h3>web developer</h3>
 			</div>
 			<ul class="contacts sidebar__contacts">
 				<li>
@@ -173,7 +173,8 @@ function repeater(str, {
 }) {
 
    const result = Array(repeatTimes)
-      .fill(`${str}${addition !== '' ? repeater(addition, {
+      .fill(`${str}${addition !== '' ? 
+         repeater(addition, {
          repeatTimes: additionRepeatTimes,
          separator: additionSeparator,
       }) : ''}`)
@@ -189,39 +190,39 @@ function repeater(str, {
 			<section class="projects">
 				<div class="projects__title  section__subtitle">My projects:</div>
 				<div class="projects__items section__body">
-					<a href="#" class="projects__item">
+					<a href="https://arthur-ming.github.io/home" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/01.png" alt="Скульптура"></p>
+							<p><img src="img/projects/01.png" alt="home"></p>
 							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
 						</figure>
 					</a>
-					<a href="#" class="projects__item">
+					<a href="https://arthur-ming.github.io/sublime" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/02.png" alt="Скульптура"></p>
+							<p><img src="img/projects/02.png" alt="sublime"></p>
 							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
 						</figure>
 					</a>
-					<a href="#" class="projects__item">
+					<a href="https://arthur-ming.github.io/Wapik" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/03.png" alt="Скульптура"></p>
+							<p><img src="img/projects/03.png" alt="Wapik"></p>
 							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
 						</figure>
 					</a>
-					<a href="#" class="projects__item">
+					<a href="https://arthur-ming.github.io/Crowdme" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/04.png" alt="Скульптура"></p>
+							<p><img src="img/projects/04.png" alt="Crowdme"></p>
 							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
 						</figure>
 					</a>
-					<a href="#" class="projects__item">
+					<a href="https://arthur-ming.github.io/CHARGER" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/05.png" alt="Скульптура"></p>
+							<p><img src="img/projects/05.png" alt="CHARGER"></p>
 							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
 						</figure>
 					</a>
-					<a href="#" class="projects__item">
+					<a href="https://stoic-payne-0deabb.netlify.app/" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/06.png" alt="Скульптура"></p>
+							<p><img src="img/projects/06.png" alt="shop"></p>
 							<figcaption>JavaScript (SPA)</figcaption>
 						</figure>
 					</a>

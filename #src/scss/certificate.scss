@@ -1,5 +1,8 @@
 .certificate {
   display: block;
+  @media (max-width: 576px) {
+    padding-right: 40px;
+  }
   &__item {
     font-family: "RobotoSlab";
     font-size: 14px;
@@ -12,6 +15,15 @@
     background-color: rgb(241, 238, 229);
     border-radius: 8px;
     border: 1px solid rgb(230, 224, 224);
+    @media (max-width: 576px) {
+      // width: 100%;
+      width: 80%;
+      flex-direction: column-reverse;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__description {
@@ -32,6 +44,9 @@
   &__icon {
     display: block;
     width: 120px;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
 
     img {
       width: 100%;
