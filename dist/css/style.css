@@ -710,9 +710,24 @@ body._lock {
     display: block;
   }
 
+  .header__content {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .header__signature h2 {
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+
+  .header__signature h3 {
+    font-size: 12px;
+    line-height: 1.2em;
+  }
+
   .nav__icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 
   .nav li {
@@ -728,9 +743,9 @@ body._lock {
   }
 
   .sidebar__avatar {
-    width: 60px;
-    height: 60px;
-    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
     margin-bottom: 20px;
   }
 
@@ -791,6 +806,15 @@ body._lock {
   .header__signature h2,
   .header__signature h3 {
     color: #fff;
+  }
+
+  .header__signature h2 {
+    font-size: 16px;
+  }
+
+  .header__signature h3 {
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .header__signature {
@@ -948,15 +972,6 @@ body._lock {
     display: block;
     width: 42px;
     height: 42px;
-  }
-
-  .header__signature h2 {
-    font-size: 16px;
-  }
-
-  .header__signature h3 {
-    font-size: 14px;
-    line-height: 16px;
   }
 
   .sidebar__nav {

@@ -41,6 +41,10 @@
 		padding-left: 100px;
 		padding-right: 40px;
 		padding-bottom: 15px;
+		@media (max-width: $md2+px) {
+			padding-top: 15px;
+			padding-bottom: 10px;
+		}
 		@media (max-width: $md3+px) {
 			padding-left: 30px;
 			padding-right: 30px;
@@ -63,12 +67,20 @@
 			}
 		}
 		h2 {
-			@media (max-width: $md4+px) {
+			@media (max-width: $md2+px) {
+				font-size: 14px;
+				line-height: 1.2em;
+			}
+			@media (max-width: $md3+px) {
 				font-size: 16px;
 			}
 		}
 		h3 {
-			@media (max-width: $md4+px) {
+			@media (max-width: $md2+px) {
+				font-size: 12px;
+				line-height: 1.2em;
+			}
+			@media (max-width: $md3+px) {
 				font-size: 14px;
 				line-height: 16px;
 			}
