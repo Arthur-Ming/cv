@@ -725,13 +725,8 @@ body._lock {
     line-height: 1.2em;
   }
 
-  .nav__icon {
-    width: 20px;
-    height: 20px;
-  }
-
   .nav li {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   .nav li a span {
