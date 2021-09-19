@@ -1,3 +1,14 @@
+html[data-theme-dark] {
+  .projects__item {
+    color: #d6d8dd;
+    figure {
+      div {
+        border: 1px solid #212429;
+      }
+    }
+  }
+}
+
 .projects {
   &__title {
   }
@@ -30,7 +41,7 @@
       flex: 0 0 100%;
     }
     figure {
-      p {
+      div {
         border-radius: 8px;
         border: 1px solid rgb(230, 224, 224);
         overflow: hidden;
@@ -41,11 +52,17 @@
       }
     }
     figcaption {
-      padding: 0px 3px;
+      padding: 0px 5px;
       font-size: 14px;
       line-height: 20px;
       font-weight: 400;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      span {
+        display: block;
+        &:first-child {
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }

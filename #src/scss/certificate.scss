@@ -3,6 +3,11 @@
   @media (max-width: 576px) {
     padding-right: 40px;
   }
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__item {
     font-family: "RobotoSlab";
     font-size: 14px;
@@ -17,12 +22,16 @@
     border: 1px solid rgb(230, 224, 224);
     @media (max-width: 576px) {
       // width: 100%;
-      width: 80%;
+
+      width: 70%;
       flex-direction: column-reverse;
       margin-bottom: 15px;
       &:last-child {
         margin-bottom: 0;
       }
+    }
+    @media (max-width: $md4 + px) {
+      width: 90%;
     }
   }
 

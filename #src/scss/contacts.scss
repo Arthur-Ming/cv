@@ -1,3 +1,14 @@
+html[data-theme-dark] {
+  .contacts {
+    &__icon {
+      color: #828386;
+      &:hover {
+        color: #b3b4b9;
+      }
+    }
+  }
+}
+
 .contacts {
   &__link {
     display: inline-block;
@@ -6,6 +17,7 @@
     width: 25px;
     height: 25px;
     color: #fff;
+    transition: color 0.3s ease 0s;
     &_header {
       color: #4d4949;
     }

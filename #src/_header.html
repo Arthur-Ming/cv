@@ -1,8 +1,9 @@
 <header class="header">
 	<div class="header__content">
 		<div class='avatar header__avatar'>
-			<img class='avatar__image' src="img/avatar/01.jpg" alt="">
+			<img class='avatar__image' src="img/avatar/03.jpg" alt="">
 		</div>
+
 		<div class="signature header__signature">
 			<h2>Artur Mingazhov</h2>
 			<h3>web developer</h3>
@@ -30,6 +31,22 @@
 				</a>
 			</li>
 		</ul>
+		<form class="form header__form" id="theme-changer">
+			<svg class="svg-icon svg-icon_sun" viewBox="0 0 24 24" fill="currentColor">
+				<use xlink:href='img/sprite.svg#sun' />
+			</svg>
+			<label class="toggler form__control">
+				<input type="checkbox" class="toggler__input" name="toggler" value="1" checked>
+				<span class="toggler__state">
+					<span class="toggler__control">
+						<span class="toggler__round"></span>
+					</span>
+				</span>
+			</label>
+			<svg class="svg-icon svg-icon_moon" viewBox="0 0 20 20" fill="currentColor">
+				<use xlink:href='img/sprite.svg#moon' />
+			</svg>
+		</form>
 		<div class="menu__icon icon-menu">
 			<span></span>
 			<span></span>

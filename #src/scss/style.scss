@@ -11,6 +11,7 @@ $md3: 767.98;
 $md4: 479.98;
 
 @import "null";
+@import "toggler";
 @import "avatar";
 @import "header";
 
@@ -22,6 +23,14 @@ $md4: 479.98;
 @import "projects";
 @import "certificate";
 @import "footer";
+
+html[data-theme-dark] {
+	body {
+		//background-color: #ac9c7f;
+		background-color: #495057;
+		color: #d6d8dd;
+	}
+}
 body {
 	color: #4d4949;
 	font-size: 16px;
@@ -114,7 +123,7 @@ body {
 		font-family: "RobotoSlab";
 		font-weight: 300;
 		font-size: 16px;
-		line-height: 24px;
+		line-height: 28px;
 		margin-top: calc(20px + 20 * ((100vw - 320px) / (1400 - 320)));
 
 		@media (max-width: $md3+px) {
@@ -185,5 +194,17 @@ body {
 		font-size: 18px;
 		//font-family: "Roboto";
 		padding-left: 20px;
+	}
+}
+html[data-theme-dark] {
+	.contacts-section {
+		&__icon {
+			width: 30px;
+			height: 30px;
+			color: #d6d8dd;
+		}
+		&__contact {
+			color: #d6d8dd;
+		}
 	}
 }

@@ -1,6 +1,13 @@
+html[data-theme-dark] {
+  .signature {
+    color: #828386;
+  }
+}
+
 .signature {
   //text-align: center;
   color: rgb(230, 229, 221);
+  h1,
   h2 {
     font-size: 20px;
     line-height: 24px;

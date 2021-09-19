@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme-dark>
 @@include('_head.html',{
 "title":"Главная"
 })
@@ -9,10 +9,10 @@
 		@@include('_header.html',{})
 		<aside class="sidebar menu__body">
 			<div class='avatar sidebar__avatar'>
-				<img class='avatar__image' src="img/avatar/01.jpg" alt="">
+				<img class='avatar__image' src="img/avatar/03.jpg" alt="">
 			</div>
 			<div class="signature sidebar__signature">
-				<h2>Artur Mingazhov</h2>
+				<h1>Artur Mingazhov</h1>
 				<h3>web developer</h3>
 			</div>
 			<ul class="contacts sidebar__contacts">
@@ -77,14 +77,14 @@
 		<main class="page  wrapper__box">
 			<section class="summary page__section" id='about'>
 				<h2 class="summary__title section__title">About Me</h2>
-				<article class="summary__text section__body">
+				<p class="summary__text section__body">
 					I am 33 years old. I have worked as a civil engineer for several years. At some point, I realized that
 					I
 					wanted to
 					change my profession. Since I have always been interested in programming, I decided to learn how to do
 					it
 					professionally. Now my goal is to become a highly skilled full-stack developer.
-				</article>
+				</p>
 			</section>
 			<section class="skills page__section" id='skills'>
 				<h2 class="skills__title  section__title">Skills</h2>
@@ -106,7 +106,7 @@
 							<span></span>
 							<span></span>
 							<span></span>
-							<span style="width: 80%"></span>
+							<span style="width: 70%"></span>
 						</span>
 					</li>
 					<li class="skills__item list__li">
@@ -116,7 +116,7 @@
 							<span></span>
 							<span></span>
 							<span></span>
-							<span style="width: 80%"></span>
+							<span style="width: 70%"></span>
 						</span>
 					</li>
 					<li class="skills__item list__li">
@@ -126,7 +126,7 @@
 							<span></span>
 							<span></span>
 							<span></span>
-							<span style="width: 80%"></span>
+							<span style="width: 60%"></span>
 						</span>
 					</li>
 					<li class="skills__item list__li">
@@ -136,7 +136,7 @@
 							<span></span>
 							<span></span>
 							<span></span>
-							<span style="width: 60%"></span>
+							<span style="width: 40%"></span>
 						</span>
 					</li>
 					<li class="skills__item list__li">
@@ -146,7 +146,7 @@
 							<span></span>
 							<span></span>
 							<span></span>
-							<span style="width: 60%"></span>
+							<span style="width: 40%"></span>
 						</span>
 					</li>
 					<li class="skills__item list__li">
@@ -188,42 +188,66 @@ function repeater(str, {
 				<h2 class="experience__title section__title">Experience</h2>
 			</section>
 			<section class="projects">
-				<div class="projects__title  section__subtitle">My projects:</div>
+				<h2 class="projects__title  section__subtitle">My projects:</h2>
 				<div class="projects__items section__body">
 					<a href="https://arthur-ming.github.io/home" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/01.png" alt="home"></p>
-							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
+							<div><img src="img/projects/01.png" alt="home"></div>
+							<figcaption>
+								<span>WELCOME TO STARTUP</span>
+								<span>Template for creative agency</span>
+								<span>(HTML/CSS/JS)</span>
+							</figcaption>
 						</figure>
 					</a>
 					<a href="https://arthur-ming.github.io/sublime" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/02.png" alt="sublime"></p>
-							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
+							<div><img src="img/projects/02.png" alt="sublime"></div>
+							<figcaption>
+								<span>SUBlIME</span>
+								<span>A one page responsive theme suitable for any kind of business representation</span>
+								<span>(HTML/CSS/JS)</span>
+							</figcaption>
 						</figure>
 					</a>
 					<a href="https://arthur-ming.github.io/Wapik" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/03.png" alt="Wapik"></p>
-							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
+							<div><img src="img/projects/03.png" alt="Wapik"></div>
+							<figcaption>
+								<span>Welcome to Wapik</span>
+								<span>Wapik is multipurpose template, with modern and smart design</span>
+								<span>(HTML/CSS/JS)</span>
+							</figcaption>
 						</figure>
 					</a>
 					<a href="https://arthur-ming.github.io/Crowdme" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/04.png" alt="Crowdme"></p>
-							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
+							<div><img src="img/projects/04.png" alt="Crowdme"></div>
+							<figcaption>
+								<span>CROWDME</span>
+								<span>Template for creative agency</span>
+								<span>(HTML/CSS/JS)</span>
+							</figcaption>
 						</figure>
 					</a>
 					<a href="https://arthur-ming.github.io/CHARGER" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/05.png" alt="CHARGER"></p>
-							<figcaption>HTML/SCSS/JS (landing page)</figcaption>
+							<div><img src="img/projects/05.png" alt="CHARGER"></div>
+							<figcaption>
+								<span>Charger</span>
+								<span>Landing page for Chargers</span>
+								<span>(HTML/CSS/JS)</span>
+							</figcaption>
 						</figure>
 					</a>
 					<a href="https://stoic-payne-0deabb.netlify.app/" class="projects__item" target="_blank">
 						<figure>
-							<p><img src="img/projects/06.png" alt="shop"></p>
-							<figcaption>JavaScript (SPA)</figcaption>
+							<div><img src="img/projects/06.png" alt="shop"></div>
+							<figcaption>
+								<span>Admin panel</span>
+								<span>Admin panel for an online store</span>
+								<span>(JS)</span>
+							</figcaption>
 						</figure>
 					</a>
 				</div>

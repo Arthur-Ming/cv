@@ -1,13 +1,20 @@
+html[data-theme-dark] {
+  .sidebar {
+    // background-color: #524941;
+    // background-color: #292724;
+    background-color: #212429;
+  }
+}
+
 .sidebar {
-  //	background-color: #c9d0e6;
   background-color: #4263eb;
-  //background-color: #fff;
+  //background-color: #4899f7;
   //background-color: #198ebd;
   //background: url("../img/sidebar/02.jpg") 0 0 / cover no-repeat;
   //background: red;
 
   position: fixed;
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(31, 31, 31);
   // width: 380px;
   width: calc(280px + 100 * ((100vw - 320px) / (1400 - 320)));
   height: 100%;
