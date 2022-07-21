@@ -1,84 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru" data-theme-dark>
-@@include('_head.html',{
+@@include('templates/head.html',{
 "title":"Главная"
 })
 
 <body>
 	<div class="wrapper">
-		@@include('_header.html',{})
-		<aside class="sidebar menu__body">
-			<div class='avatar sidebar__avatar'>
-				<img class='avatar__image' src="img/avatar/03.jpg" alt="">
-			</div>
-			<div class="signature sidebar__signature">
-				<h1>Artur Mingazhov</h1>
-				<h3>web developer</h3>
-			</div>
-			<ul class="contacts sidebar__contacts">
-				<li>
-					<a href="https://github.com/Arthur-Ming" target="_blank" class="contacts__link">
-						<svg class="contacts__icon" viewBox="0 0 438.549 438.549">
-							<use xlink:href='img/sprite.svg#git' />
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:arthurming7@gmail.com" target="_blank" class="contacts__link">
-						<svg class="contacts__icon" viewBox="0 0 50 50">
-							<use xlink:href='img/sprite.svg#email' />
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="https://t.me/arthur_ming" target="_blank" class="contacts__link">
-						<svg class="contacts__icon" viewBox="0 0 32 32">
-							<use xlink:href='img/sprite.svg#telegram' />
-						</svg>
-					</a>
-				</li>
-			</ul>
-			<nav class='nav sidebar__nav'>
-				<ul>
-					<li><a href="#about" class="nav__item">
-							<svg class="nav__icon" viewBox="0 0 24 24">
-								<use xlink:href='img/sprite.svg#about' />
-							</svg>
-							<span>About</span></a>
-					</li>
-					<li><a href="#skills" class="nav__item">
-							<svg class="nav__icon" viewBox="0 0 24 24">
-								<use xlink:href='img/sprite.svg#skills' />
-							</svg>
-							<span>Skills</span></a>
-					</li>
-					<li><a href="#exp" class="nav__item">
-							<svg class="nav__icon" viewBox="0 0 24 24">
-								<use xlink:href='img/sprite.svg#experience' />
-							</svg>
-							<span>Experience</span></a>
-					</li>
-					<li><a href="#edu" class="nav__item">
-							<svg class="nav__icon" viewBox="0 0 24 24">
-								<use xlink:href='img/sprite.svg#education' />
-							</svg>
-							<span>Education</span></a>
-					</li>
-					<li><a href="#contacts" class="nav__item">
-							<svg class="nav__icon" viewBox="0 0 24 24">
-								<use xlink:href='img/sprite.svg#contacts' />
-							</svg>
-							<span>Contacts</span></a>
-					</li>
-
-				</ul>
-			</nav>
-		</aside>
+		@@include('templates/header.html',{})
+		@@include('templates/sidebar.html',{})
 		<main class="page  wrapper__box">
 			<section class="summary page__section" id='about'>
 				<h2 class="summary__title section__title">About Me</h2>
 				<p class="summary__text section__body">
-					I am 33 years old. I have worked as a civil engineer for several years. At some point, I realized that
+					I am 34 years old. I have worked as a civil engineer for several years. At some point, I realized that
 					I
 					wanted to
 					change my profession. Since I have always been interested in programming, I decided to learn how to do
@@ -121,6 +55,16 @@
 					</li>
 					<li class="skills__item list__li">
 						<span class="skills__skill">Vue/vuex</span>
+						<span class="skills__progress">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span style="width: 60%"></span>
+						</span>
+					</li>
+					<li class="skills__item list__li">
+						<span class="skills__skill">React/Redux</span>
 						<span class="skills__progress">
 							<span></span>
 							<span></span>
@@ -190,63 +134,63 @@ function repeater(str, {
 			<section class="projects">
 				<h2 class="projects__title  section__subtitle">My projects:</h2>
 				<div class="projects__items section__body">
-					<a href="https://arthur-ming.github.io/home" class="projects__item" target="_blank">
+					<a href="https://arthur-ming.github.io/museum/" class="projects__item" target="_blank">
 						<figure>
-							<div><img src="img/projects/01.png" alt="home"></div>
+							<div><img src="img/projects/01.png" alt="museum"></div>
 							<figcaption>
-								<span>WELCOME TO STARTUP</span>
-								<span>Template for creative agency</span>
-								<span>(HTML/CSS/JS)</span>
-							</figcaption>
-						</figure>
-					</a>
-					<a href="https://arthur-ming.github.io/sublime" class="projects__item" target="_blank">
-						<figure>
-							<div><img src="img/projects/02.png" alt="sublime"></div>
-							<figcaption>
-								<span>SUBlIME</span>
-								<span>A one page responsive theme suitable for any kind of business representation</span>
-								<span>(HTML/CSS/JS)</span>
-							</figcaption>
-						</figure>
-					</a>
-					<a href="https://arthur-ming.github.io/Wapik" class="projects__item" target="_blank">
-						<figure>
-							<div><img src="img/projects/03.png" alt="Wapik"></div>
-							<figcaption>
-								<span>Welcome to Wapik</span>
-								<span>Wapik is multipurpose template, with modern and smart design</span>
-								<span>(HTML/CSS/JS)</span>
-							</figcaption>
-						</figure>
-					</a>
-					<a href="https://arthur-ming.github.io/Crowdme" class="projects__item" target="_blank">
-						<figure>
-							<div><img src="img/projects/04.png" alt="Crowdme"></div>
-							<figcaption>
-								<span>CROWDME</span>
-								<span>Template for creative agency</span>
-								<span>(HTML/CSS/JS)</span>
-							</figcaption>
-						</figure>
-					</a>
-					<a href="https://arthur-ming.github.io/CHARGER" class="projects__item" target="_blank">
-						<figure>
-							<div><img src="img/projects/05.png" alt="CHARGER"></div>
-							<figcaption>
-								<span>Charger</span>
-								<span>Landing page for Chargers</span>
-								<span>(HTML/CSS/JS)</span>
+								<span>Museum</span>
+								<span>Landing page</span>
+								<span>(HTML/SCSS/JS)</span>
 							</figcaption>
 						</figure>
 					</a>
 					<a href="https://stoic-payne-0deabb.netlify.app/" class="projects__item" target="_blank">
 						<figure>
-							<div><img src="img/projects/06.png" alt="shop"></div>
+							<div><img src="img/projects/02.png" alt="shop"></div>
 							<figcaption>
 								<span>Admin panel</span>
 								<span>Admin panel for an online store</span>
 								<span>(JS)</span>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="https://rolling-scopes-school.github.io/arthur-ming-JSFE2021Q3/art-quiz/" class="projects__item" target="_blank">
+						<figure>
+							<div><img src="img/projects/03.png" alt="shop"></div>
+							<figcaption>
+								<span>Game</span>
+								<span>Artistic guessing game</span>
+								<span>(HTML/SCSS/JS)</span>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="https://rolling-scopes-school.github.io/arthur-ming-JSFE2021Q3/christmas-task/" class="projects__item" target="_blank">
+						<figure>
+							<div><img src="img/projects/04.png" alt="shop"></div>
+							<figcaption>
+								<span>Game</span>
+								<span>Christmas game</span>
+								<span>(HTML/SCSS/Typescript)</span>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="https://arthur-ming.github.io/my-rs-lang/" class="projects__item" target="_blank">
+						<figure>
+							<div><img src="img/projects/05.png" alt="shop"></div>
+							<figcaption>
+								<span>app</span>
+								<span>english learning app</span>
+								<span>(HTML/SCSS/Typescript)</span>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="https://project-managment-app-team.netlify.app/" class="projects__item" target="_blank">
+						<figure>
+							<div><img src="img/projects/06.png" alt="shop"></div>
+							<figcaption>
+								<span>project managment app</span>
+								<span>app for creating, editing and removing board of tasks</span>
+								<span>(Typescript/React/React-query/React-hook-form)</span>
 							</figcaption>
 						</figure>
 					</a>
@@ -261,7 +205,6 @@ function repeater(str, {
 							<li>Civil engineering</li>
 						</ul>
 					</li>
-
 					<li class="list__li">
 						learn.javascript courses
 						<ul class="education__certificate">
@@ -302,7 +245,48 @@ function repeater(str, {
 										<img src="img/sertificate/01.png" alt="Moder HTML and CSS">
 									</span>
 								</a>
+								<a href="https://learn.javascript.ru/courses/react-20211123/artur-mingazhov/en/certificate.jpg"
+									target="_blank" class="certificate__item">
+									<span class="certificate__description">
+										<span class="certificate__title">
+											React course
+										</span>
+										<span class="certificate__dates">23.11.2021 - 28.12.2021</span>
+									</span>
+									<span class="certificate__icon">
+										<img src="img/sertificate/01.png" alt="React course">
+									</span>
+								</a>
+								<a href="https://learn.javascript.ru/courses/typescript-20220122/artur-mingazhov/en/certificate.jpg"
+									target="_blank" class="certificate__item">
+									<span class="certificate__description">
+										<span class="certificate__title">
+											TypeScript course
+										</span>
+										<span class="certificate__dates">22.01.2022 - 23.01.2022</span>
+									</span>
+									<span class="certificate__icon">
+										<img src="img/sertificate/01.png" alt="TypeScript course">
+									</span>
+								</a>
 							</li>
+						</ul>
+						rs school
+						<ul class="education__certificate">
+							<li class="certificate">
+								<a href="https://app.rs.school/certificate/loxlua43"
+									target="_blank" class="certificate__item">
+									<span class="certificate__description">
+										<span class="certificate__title">
+											JAVASCRIPT/FRONT-END 2021Q3(JAVASCRIPT)
+										</span>
+										<span class="certificate__dates">01.09.2021 - 01.03.2022</span>
+									</span>
+									<span class="certificate__icon">
+										<img src="img/sertificate/02.png" alt="Moder HTML and CSS">
+									</span>
+								</a>
+   						    </li>
 						</ul>
 					</li>
 				</ul>
@@ -337,24 +321,10 @@ function repeater(str, {
 					</li>
 				</ul>
 			</section>
-
-
-			<!-- 	<div class="ic">
-				<img src="img/Sun_icon.svg" alt="">
-			</div>
-			<div class="ic">
-				<img src="img/skill-svgrepo-com.svg" alt="">
-			</div>
-			<div class="ic">
-				<img src="img/For-your-business-icon.svg" alt="">
-			</div> -->
-
 		</main>
-
-		@@include('_footer.html',{})
+		@@include('templates/footer.html',{})
 	</div>
-
-	@@include('_js.html',{})
+	@@include('templates/js.html',{})
 </body>
 
 </html>

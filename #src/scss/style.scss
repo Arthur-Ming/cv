@@ -3,12 +3,12 @@
 $fontFamily: "Roboto";
 
 $minWidth: 320px;
-$maxWidth: 1920;
-$maxWidthContainer: 1280;
+$maxWidth: 1920px;
+$maxWidthContainer: 1280px;
 $md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
 
 @import "null";
 @import "toggler";
@@ -44,7 +44,7 @@ body {
 .wrapper {
 	width: 100%;
 	min-height: 100%;
-	overflow: hidden;
+	//overflow: hidden;
 	display: flex;
 	flex-direction: column;
 
@@ -53,25 +53,26 @@ body {
 }
 
 .wrapper__box {
-	max-width: $maxWidthContainer + px;
+	max-width: $maxWidthContainer;
 	margin: 0 auto;
-	//padding: 0px 80px 0px 420px;
-	//padding-right: 80px;
-	padding-right: calc(0px + 80 * ((100vw - 320px) / (1400 - 320)));
-	//padding-left: 420px;
-	padding-left: calc(320px + 100 * ((100vw - 320px) / (1400 - 320)));
-	@media (max-width: $md2+px) {
+	padding-right: 80px;
+	padding-left: 420px;
+	@media (max-width: 1400px) {
+		padding-right: calc(0px + 80 * ((100vw - 320px) / (1400 - 320)));
+		padding-left: calc(320px + 100 * ((100vw - 320px) / (1400 - 320)));
+	}
+	@media (max-width: $md2) {
 		padding-right: 40px;
 		padding-left: 120px;
 	}
-	@media (max-width: $md3+px) {
+	@media (max-width: $md3) {
 		padding-left: 40px;
 	}
 	@media (max-width: 576px) {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	@media (max-width: $md4+px) {
+	@media (max-width: $md4) {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -81,20 +82,20 @@ body {
 	flex: 1 1 auto;
 	//padding-bottom: 80px;
 	padding-bottom: calc(30px + 50 * ((100vw - 320px) / (1400 - 320)));
-	@media (max-width: $md3+px) {
+	@media (max-width: $md3) {
 		margin-top: 70px;
 		//	padding-bottom: 50px;
 	}
-	@media (max-width: $md4+px) {
+	@media (max-width: $md4) {
 		margin-top: 50px;
 		//	padding-bottom: 20px;
 	}
 	&__section {
 		padding-top: 50px;
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2) {
 			padding-top: 30px;
 		}
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			//padding-top: 85px;
 		}
 	}
@@ -107,7 +108,7 @@ body {
 		font-weight: 700;
 		line-height: 1.2em;
 		font-size: calc(20px + 12 * ((100vw - 320px) / (1400 - 320)));
-		@media (max-width: $md4+px) {
+		@media (max-width: $md4) {
 			text-align: center;
 		}
 	}
@@ -115,18 +116,18 @@ body {
 		margin: 20px 0px 0px 0px;
 		font-size: calc(18px + 6 * ((100vw - 320px) / (1400 - 320)));
 		line-height: 1.2em;
-		@media (max-width: $md4+px) {
+		@media (max-width: $md4) {
 			text-align: center;
 		}
 	}
 	&__body {
-		font-family: "RobotoSlab";
+		
 		font-weight: 300;
 		font-size: 16px;
 		line-height: 28px;
 		margin-top: calc(20px + 20 * ((100vw - 320px) / (1400 - 320)));
 
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			font-size: 14px;
 		}
 	}
@@ -150,7 +151,7 @@ body {
 		font-size: 14px;
 		line-height: 20px;
 		font-family: "Consola";
-		@media (max-width: $md4+px) {
+		@media (max-width: $md4) {
 			font-size: 12px;
 			line-height: 18px;
 		}

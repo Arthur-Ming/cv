@@ -10,7 +10,7 @@
       justify-content: space-between;
       align-items: center;
       width: 80%;
-      @media (max-width: $md4+px) {
+      @media (max-width: $md4) {
          width: 95%;
       }
    }

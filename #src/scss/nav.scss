@@ -27,19 +27,19 @@ html[data-theme-dark] {
     height: 24px;
     color: #fff;
 
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
       display: none;
     }
   }
   li {
     margin-bottom: 20px;
-    @media (max-width: $md2+px) {
+    @media (max-width: $md2) {
       margin-bottom: 24px;
     }
     a {
       display: flex;
       align-items: center;
-      @media (max-width: $md3+px) {
+      @media (max-width: $md3) {
         justify-content: center;
       }
       span {
@@ -49,10 +49,10 @@ html[data-theme-dark] {
         text-decoration: none;
         display: block;
         transition: color 0.2s ease 0s;
-        @media (max-width: $md2+px) {
+        @media (max-width: $md2) {
           display: none;
         }
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
           margin-left: 0;
           display: block;
         }

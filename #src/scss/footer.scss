@@ -15,7 +15,7 @@ html[data-theme-dark] {
    &__logo {
       display: block;
       width: 80px;
-      @media (max-width: $md4+px) {
+      @media (max-width: $md4) {
          width: 60px;
       }
 
@@ -26,14 +26,14 @@ html[data-theme-dark] {
    &__year {
       font-size: 18px;
       line-height: 24px;
-      @media (max-width: $md4+px) {
+      @media (max-width: $md4) {
          font-size: 14px;
       }
    }
    &__contact {
       font-size: 18px;
       line-height: 24px;
-      @media (max-width: $md4+px) {
+      @media (max-width: $md4) {
          font-size: 14px;
          margin-left: 10px;
       }

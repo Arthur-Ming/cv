@@ -14,10 +14,10 @@ html[data-theme-dark] {
 	position: relative;
 	width: 100%;
 	background-color: #fff;
-	@media (max-width: $md2+px) {
+	@media (max-width: $md2) {
 		border-bottom: 1px solid #828386;
 	}
-	@media (max-width: $md3+px) {
+	@media (max-width: $md3) {
 		position: fixed;
 		background-color: #4263eb;
 		opacity: 0.98;
@@ -29,12 +29,12 @@ html[data-theme-dark] {
 		width: 60px;
 		height: 60px;
 
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			display: block;
 			width: 50px;
 			height: 50px;
 		}
-		@media (max-width: $md4+px) {
+		@media (max-width: $md4) {
 			display: block;
 			width: 42px;
 			height: 42px;
@@ -50,11 +50,11 @@ html[data-theme-dark] {
 		padding-left: 100px;
 		padding-right: 40px;
 
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2) {
 			padding-top: 15px;
 			padding-bottom: 10px;
 		}
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			padding-left: 30px;
 			padding-right: 30px;
 			padding-top: 8px;
@@ -69,42 +69,42 @@ html[data-theme-dark] {
 	&__signature {
 		display: none;
 		text-align: left;
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2) {
 			display: block;
 		}
 		h2,
 		h3 {
 			color: #4d4949;
-			@media (max-width: $md3+px) {
+			@media (max-width: $md3) {
 				color: #fff;
 			}
 		}
 		h2 {
-			@media (max-width: $md2+px) {
+			@media (max-width: $md2) {
 				font-size: 14px;
 				line-height: 1.2em;
 			}
-			@media (max-width: $md3+px) {
+			@media (max-width: $md3) {
 				font-size: 16px;
 			}
 		}
 		h3 {
-			@media (max-width: $md2+px) {
+			@media (max-width: $md2) {
 				font-size: 12px;
 				line-height: 1.2em;
 			}
-			@media (max-width: $md3+px) {
+			@media (max-width: $md3) {
 				font-size: 14px;
 				line-height: 16px;
 			}
 		}
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			text-align: center;
 		}
 	}
 	&__contacts {
 		display: none;
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2) {
 			display: flex;
 		}
 		li {
@@ -113,7 +113,7 @@ html[data-theme-dark] {
 				margin-right: 0;
 			}
 		}
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			display: none;
 		}
 	}
@@ -127,12 +127,12 @@ html[data-theme-dark] {
 			margin: 0px 14px;
 		}
 
-		@media (max-width: $md2+px) {
+		@media (max-width: $md2) {
 			position: relative;
 			top: 0;
 			right: 0;
 		}
-		@media (max-width: $md3+px) {
+		@media (max-width: $md3) {
 			display: none;
 		}
 	}
@@ -147,7 +147,7 @@ html[data-theme-dark] {
 
 .icon-menu {
 	display: none;
-	@media (max-width: $md3+px) {
+	@media (max-width: $md3) {
 		display: block;
 		position: relative;
 		//	position: absolute;
@@ -157,7 +157,7 @@ html[data-theme-dark] {
 		height: 25px;
 		cursor: pointer;
 		z-index: 5;
-		@media (max-width: $md4+px) {
+		@media (max-width: $md4) {
 			width: 30px;
 			height: 20px;
 		}

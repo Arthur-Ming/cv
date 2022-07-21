@@ -26,10 +26,10 @@ html[data-theme-dark] {
   transition: left 0.3s ease 0s;
   z-index: 90;
 
-  @media (max-width: $md2+px) {
+  @media (max-width: $md2) {
     width: 80px;
   }
-  @media (max-width: $md3+px) {
+  @media (max-width: $md3) {
     opacity: 0.98;
     border-right: none;
     left: -100%;
@@ -44,29 +44,29 @@ html[data-theme-dark] {
     margin: 40px auto 10px;
     width: 200px;
     height: 200px;
-    @media (max-width: $md2+px) {
+    @media (max-width: $md2) {
       width: 40px;
       height: 40px;
       margin-top: 12px;
       margin-bottom: 20px;
     }
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
       display: none;
     }
   }
   &__signature {
     margin: 0px auto;
     text-align: center;
-    @media (max-width: $md2+px) {
+    @media (max-width: $md2) {
       display: none;
     }
   }
   &__nav {
     margin: 30px 0px 20px 0px;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
       margin-top: 100px;
     }
-    @media (max-width: $md4+px) {
+    @media (max-width: $md4) {
       margin-top: 80px;
     }
   }
@@ -76,7 +76,7 @@ html[data-theme-dark] {
     width: 50%;
     margin: 30px auto 0;
 
-    @media (max-width: $md2+px) {
+    @media (max-width: $md2) {
       flex-direction: column;
       text-align: center;
       margin-top: 40px;
@@ -84,11 +84,11 @@ html[data-theme-dark] {
     }
 
     li {
-      @media (max-width: $md2+px) {
+      @media (max-width: $md2) {
         margin-bottom: 20px;
       }
       &:last-child {
-        @media (max-width: $md2+px) {
+        @media (max-width: $md2) {
           margin-bottom: 0px;
         }
       }
